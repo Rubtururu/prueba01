@@ -1,43 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Flappy Bird</title>
-	<!-- Enlace a la hoja de estilos -->
-	<link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <title>Idle Economy Game</title>
+    <style>
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-	<header>
-		<h1>Flappy Bird</h1>
-	</header>
-	<main>
-		<canvas id="canvas"></canvas>
-		<p>Presiona la tecla espacio o haz clic para saltar</p>
-		<p>Puntuación: <span id="score"></span></p>
-		<!-- Botón para conectarse a la billetera -->
-		<button id="connect">Conectar a la billetera</button>
-		<!-- Botón para depositar fondos en el contrato inteligente -->
-		<button id="deposit">Depositar fondos</button>
-		<!-- Botón para jugar -->
-		<button id="play">Jugar</button>
-		<!-- Tabla para mostrar el ranking semanal -->
-		<table id="ranking">
-			<thead>
-				<tr>
-					<th>Posición</th>
-					<th>Jugador</th>
-					<th>Puntuación</th>
-				</tr>
-			</thead>
-			<tbody>
-				<!-- Aquí se actualizará el ranking semanal a medida que se juegue -->
-			</tbody>
-		</table>
-	</main>
-	<footer>
-		<p>Hecho por [TU NOMBRE] con amor y programación</p>
-	</footer>
-	<!-- Enlace al archivo JavaScript -->
-	<script src="script.js"></script>
+    <h1>Idle Economy Game</h1>
+    <p>Money: <span id="money"></span></p>
+    <p>Production: <span id="production"></span> / sec</p>
+    <button id="buyProductionBtn">Buy Production (Cost: <span id="productionCost"></span>)</button>
+    <p>Businesses:</p>
+    <div id="businesses"></div>
+    <p>Upgrades:</p>
+    <div id="upgrades"></div>
+    <button id="saveBtn">Save</button>
+    <button id="loadBtn">Load</button>
+    <script src="app.js"></script>
 </body>
 </html>
