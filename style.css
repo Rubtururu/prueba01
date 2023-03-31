@@ -1,41 +1,109 @@
+/* Estilo de fondo */
 body {
-  margin: 0;
-  padding: 0;
-  background-color: #70c5ce;
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: #333;
 }
 
-canvas {
-  display: block;
+/* Estilo de encabezado */
+header {
+  background-color: #3f3d56;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Estilo de contenedor principal */
+.container {
   margin: 0 auto;
-  background-color: #fff;
+  max-width: 800px;
+  padding: 20px;
 }
 
-button:hover {
-  animation: fade 0.5s;
+/* Estilo de los botones */
+.button {
+  background-color: #6f42c1;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
 }
 
-@keyframes fade {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0.5;
-  }
+.button:hover {
+  background-color: #5a32a8;
 }
 
-body {
-  background-color: #3b9c9c;
+/* Estilo de tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #3f3d56;
   color: #fff;
 }
 
-button {
-  background-color: #2e7d32;
-  color: #fff;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-button {
-  background-color: #2e7d32;
+/* Estilo de formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  background-color: #f2f2f2;
+}
+
+/* Estilo de alerta */
+.alert {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f44336;
   color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 5px 0px #1b5e20;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Estilo de éxito */
+.success {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #6f42c1;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Estilo de icono */
+.icon {
+  margin-right: 10px;
+  font-size: 20px;
 }
