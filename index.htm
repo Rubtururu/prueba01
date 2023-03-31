@@ -1,12 +1,43 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Flappy Bird</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <canvas id="canvas"></canvas>
-    <script src="flappy-bird.js"></script>
-  </body>
+<head>
+	<meta charset="utf-8">
+	<title>Flappy Bird</title>
+	<!-- Enlace a la hoja de estilos -->
+	<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+	<header>
+		<h1>Flappy Bird</h1>
+	</header>
+	<main>
+		<canvas id="canvas"></canvas>
+		<p>Presiona la tecla espacio o haz clic para saltar</p>
+		<p>Puntuación: <span id="score"></span></p>
+		<!-- Botón para conectarse a la billetera -->
+		<button id="connect">Conectar a la billetera</button>
+		<!-- Botón para depositar fondos en el contrato inteligente -->
+		<button id="deposit">Depositar fondos</button>
+		<!-- Botón para jugar -->
+		<button id="play">Jugar</button>
+		<!-- Tabla para mostrar el ranking semanal -->
+		<table id="ranking">
+			<thead>
+				<tr>
+					<th>Posición</th>
+					<th>Jugador</th>
+					<th>Puntuación</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- Aquí se actualizará el ranking semanal a medida que se juegue -->
+			</tbody>
+		</table>
+	</main>
+	<footer>
+		<p>Hecho por [TU NOMBRE] con amor y programación</p>
+	</footer>
+	<!-- Enlace al archivo JavaScript -->
+	<script src="script.js"></script>
+</body>
 </html>
